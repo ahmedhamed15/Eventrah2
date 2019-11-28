@@ -1,0 +1,8 @@
+.management-links {
+    .user-managment-link {
+        margin-bottom: 30px;
+        @media #{$maxSmall} {
+            text-align: center !important
+        }
+    }
+}

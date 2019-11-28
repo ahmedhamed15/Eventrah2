@@ -1,0 +1,77 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "components/buttons";
+@import "components/animations";
+@import "components/scroll-top-button";
+@import "layouts/navbar";
+@import "sections/front-page";
+@import "sections/registeration-links";
+@import "sections/login";
+@import "sections/services";
+@import "sections/register";
+@import "sections/management-links";
+@import "layouts/footer";
+
+
+/* =====[Start: Global rules]===== */
+body {
+    direction: rtl;
+}
+*, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+.eventrah-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.eventrah-body,
+.services,
+.registeration-links,
+.login-page,
+.register-page,
+.management-links {
+    &:after,
+    &:before {
+        content: '';
+        background: url(../images/shape.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100px;
+        @media #{$maxSmall} {
+            display: none
+        }
+    }
+    &:after {
+        bottom: 0;
+        left: 20px;
+        width: 36%;  
+    }
+    &:before {
+        top: 40px;
+        right: 20px;
+        width: 33%;
+    }
+}
+.eventrah-body,
+.services,
+.registeration-links {
+    @media #{$maxSmall} {
+        display: block
+    }
+}
+.management-links,
+.registeration-links,
+.register-page,
+.login-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* =====[End: Global rules]===== */

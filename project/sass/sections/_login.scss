@@ -1,0 +1,12 @@
+.login-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form {
+        .form-control {
+            padding: 25px 20px;
+            border-radius: 0;
+        }
+    }
+}

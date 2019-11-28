@@ -1,0 +1,14 @@
+.register-page {
+    form {
+        padding: 40px 0;
+        .form-control {
+            padding: 25px 20px;
+            border-radius: 0;
+        }
+        select.form-control {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 52px;
+        }
+    }
+}

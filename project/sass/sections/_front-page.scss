@@ -1,0 +1,19 @@
+.front-page {
+    .main-logo {
+        img {
+            max-width: 100px;
+        }
+    }
+    .eventrah-title {
+        color: #676868;
+        margin: 20px 0;
+    }
+    .eventrah-brief {
+        width: 60%;
+        margin: auto;
+        font-weight: 400;
+        @media #{$maxSmall} {
+            width: 80%
+        }
+    }
+}
