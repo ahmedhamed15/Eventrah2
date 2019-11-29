@@ -12,6 +12,14 @@
 @import "sections/management-links";
 @import "sections/select-design";
 @import "sections/format-page";
+@import "sections/event-details";
+@import "sections/place-details";
+@import "sections/login-cards";
+@import "sections/choose-category";
+@import "sections/price-details";
+@import "sections/services-offering";
+@import "sections/pay-details";
+@import "sections/category-price";
 @import "layouts/footer";
 
 
@@ -39,7 +47,20 @@ a {
 .register-page,
 .management-links,
 .select-design,
-.format-page {
+.format-page,
+.event-details,
+.place-details,
+.login-cards,
+.choose-category,
+.price-details,
+.login-cards-links,
+.conferences,
+.events,
+.services-offering,
+.notes,
+.help,
+.pay-details,
+.category-price {
     &:after,
     &:before {
         content: '';
@@ -55,11 +76,13 @@ a {
         bottom: 0;
         left: 20px;
         width: 36%;  
+        z-index: -1;
     }
     &:before {
         top: 40px;
         right: 20px;
         width: 33%;
+        z-index: -1;
     }
 }
 .eventrah-body,
@@ -74,10 +97,75 @@ a {
 .register-page,
 .login-page,
 .select-design,
-.format-page {
+.format-page,
+.event-details,
+.place-details,
+.login-cards,
+.choose-category,
+.price-details,
+.login-cards-links,
+.conferences,
+.events,
+.services-offering,
+.notes,
+.help,
+.pay-details,
+.category-price {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+label.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 15px;
+    padding-right: 35px;
+    &:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    input:checked ~ .checkmark {
+        background-color: #2196f3;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .checkmark {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #2196f3;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
 }
 /* =====[End: Global rules]===== */

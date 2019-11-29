@@ -1,0 +1,35 @@
+.place-details {
+    color: #988B4A;
+    padding: 70px 0;
+    h1 {
+        margin-bottom: 20px;
+    }
+    h5 {
+        @media #{$maxSmall} {
+            text-align: center;
+            margin: 25px 0;
+        }
+    }
+    form {
+        padding: 0;
+    }
+    select,
+    *::placeholder,
+    h1 {
+        color: #988B4A;
+    }
+    iframe {
+        width: 100%;
+        max-height: 300px;
+    }
+    .col-12 {
+        @media #{$minMidium} {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+    .main-button {
+        margin-top: 50px;
+    }
+}

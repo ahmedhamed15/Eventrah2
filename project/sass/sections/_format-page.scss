@@ -124,5 +124,13 @@
             padding-bottom: 0;
             height: 52px;
         }
+        button {
+            &.main-button {
+                border: none;
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
     }
 }

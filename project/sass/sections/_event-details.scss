@@ -1,0 +1,42 @@
+.event-details {
+    color: #988B4A;
+    padding: 70px 0;
+    h1 {
+        margin-bottom: 20px;
+    }
+    form {
+        padding: 0;
+        *::placeholder,
+        select {
+            color: #988B4A;
+        }
+        label.external-label {
+            height: 52px;
+            border: 1px solid #ced4da;
+            line-height: 52px;
+            text-align: center;
+            .checkmark {
+                top: 13px;
+                right: 18px;
+            }
+        }
+        .dropdown {
+            button {
+                border-radius: 0;
+                border: 1px solid #ced4da;
+                height: 52px;
+                width: 100%;
+                background: none;
+                color: #988B4A;
+                &:after {
+                    position: absolute;
+                    left: 10px;
+                    top: 25px;
+                }
+            }
+            .dropdown-menu {
+                color: #988B4A;
+            }
+        }
+    }
+}

@@ -123,12 +123,15 @@
       .services .service .service-menu li a {
         color: #676868; }
 
-.register-page form {
+.register-page form,
+.main-form-style form {
   padding: 40px 0; }
-  .register-page form .form-control {
+  .register-page form .form-control,
+  .main-form-style form .form-control {
     padding: 25px 20px;
     border-radius: 0; }
-  .register-page form select.form-control {
+  .register-page form select.form-control,
+  .main-form-style form select.form-control {
     padding-top: 0;
     padding-bottom: 0;
     height: 52px; }
@@ -256,6 +259,158 @@
     padding-top: 0;
     padding-bottom: 0;
     height: 52px; }
+  .format-page form button.main-button {
+    border: none; }
+    .format-page form button.main-button:focus {
+      outline: 0; }
+
+.event-details {
+  color: #988B4A;
+  padding: 70px 0; }
+  .event-details h1 {
+    margin-bottom: 20px; }
+  .event-details form {
+    padding: 0; }
+    .event-details form *::-webkit-input-placeholder {
+      color: #988B4A; }
+    .event-details form *::-moz-placeholder {
+      color: #988B4A; }
+    .event-details form *:-ms-input-placeholder {
+      color: #988B4A; }
+    .event-details form *::-ms-input-placeholder {
+      color: #988B4A; }
+    .event-details form *::placeholder,
+    .event-details form select {
+      color: #988B4A; }
+    .event-details form label.external-label {
+      height: 52px;
+      border: 1px solid #ced4da;
+      line-height: 52px;
+      text-align: center; }
+      .event-details form label.external-label .checkmark {
+        top: 13px;
+        right: 18px; }
+    .event-details form .dropdown button {
+      border-radius: 0;
+      border: 1px solid #ced4da;
+      height: 52px;
+      width: 100%;
+      background: none;
+      color: #988B4A; }
+      .event-details form .dropdown button:after {
+        position: absolute;
+        left: 10px;
+        top: 25px; }
+    .event-details form .dropdown .dropdown-menu {
+      color: #988B4A; }
+
+.place-details {
+  color: #988B4A;
+  padding: 70px 0; }
+  .place-details h1 {
+    margin-bottom: 20px; }
+  @media (max-width: 991px) {
+    .place-details h5 {
+      text-align: center;
+      margin: 25px 0; } }
+  .place-details form {
+    padding: 0; }
+  .place-details *::-webkit-input-placeholder {
+    color: #988B4A; }
+  .place-details *::-moz-placeholder {
+    color: #988B4A; }
+  .place-details *:-ms-input-placeholder {
+    color: #988B4A; }
+  .place-details *::-ms-input-placeholder {
+    color: #988B4A; }
+  .place-details select,
+  .place-details *::placeholder,
+  .place-details h1 {
+    color: #988B4A; }
+  .place-details iframe {
+    width: 100%;
+    max-height: 300px; }
+  @media (min-width: 992px) {
+    .place-details .col-12 {
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex; } }
+  .place-details .main-button {
+    margin-top: 50px; }
+
+.login-cards {
+  padding: 70px 0; }
+  .login-cards h1 {
+    color: #988B4A;
+    margin-bottom: 40px; }
+  .login-cards .login-cards-dropmenus {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row; }
+    @media (max-width: 991px) {
+      .login-cards .login-cards-dropmenus {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+    .login-cards .login-cards-dropmenus .dropdown {
+      -webkit-box-flex: 0;
+              flex: 0 0 50%;
+      max-width: 50%; }
+      @media (max-width: 991px) {
+        .login-cards .login-cards-dropmenus .dropdown {
+          -webkit-box-flex: 0;
+                  flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 30px; } }
+      .login-cards .login-cards-dropmenus .dropdown button {
+        width: 100%;
+        height: 52px;
+        border-radius: 0;
+        border: 1px solid #ced4da;
+        background: none; }
+      .login-cards .login-cards-dropmenus .dropdown:last-child {
+        margin-right: 20px; }
+        @media (max-width: 991px) {
+          .login-cards .login-cards-dropmenus .dropdown:last-child {
+            margin-right: 0; } }
+      .login-cards .login-cards-dropmenus .dropdown .dropdown-menu {
+        text-align: right; }
+
+.choose-category {
+  padding: 70px 0; }
+  .choose-category .categories {
+    border: 1px solid #ced4da;
+    padding: 25px;
+    text-align: right; }
+    .choose-category .categories label {
+      font-size: 18px;
+      line-height: 35px; }
+    @media (max-width: 991px) {
+      .choose-category .categories .category {
+        margin-bottom: 30px; } }
+
+.price-details,
+.custom-navigate-links {
+  padding: 70px 0; }
+  .price-details h1,
+  .custom-navigate-links h1 {
+    color: #988B4A;
+    margin-bottom: 30px; }
+
+.services-offering {
+  padding: 70px 0; }
+  .services-offering a {
+    width: 290px; }
+
+.pay-details {
+  padding: 70px 0; }
+  .pay-details h1 {
+    color: #988B4A; }
 
 footer {
   background-color: #e8c31c;
@@ -310,7 +465,33 @@ a {
 .select-design:after,
 .select-design:before,
 .format-page:after,
-.format-page:before {
+.format-page:before,
+.event-details:after,
+.event-details:before,
+.place-details:after,
+.place-details:before,
+.login-cards:after,
+.login-cards:before,
+.choose-category:after,
+.choose-category:before,
+.price-details:after,
+.price-details:before,
+.login-cards-links:after,
+.login-cards-links:before,
+.conferences:after,
+.conferences:before,
+.events:after,
+.events:before,
+.services-offering:after,
+.services-offering:before,
+.notes:after,
+.notes:before,
+.help:after,
+.help:before,
+.pay-details:after,
+.pay-details:before,
+.category-price:after,
+.category-price:before {
   content: '';
   background: url(../images/shape.png);
   background-repeat: no-repeat;
@@ -331,7 +512,33 @@ a {
     .select-design:after,
     .select-design:before,
     .format-page:after,
-    .format-page:before {
+    .format-page:before,
+    .event-details:after,
+    .event-details:before,
+    .place-details:after,
+    .place-details:before,
+    .login-cards:after,
+    .login-cards:before,
+    .choose-category:after,
+    .choose-category:before,
+    .price-details:after,
+    .price-details:before,
+    .login-cards-links:after,
+    .login-cards-links:before,
+    .conferences:after,
+    .conferences:before,
+    .events:after,
+    .events:before,
+    .services-offering:after,
+    .services-offering:before,
+    .notes:after,
+    .notes:before,
+    .help:after,
+    .help:before,
+    .pay-details:after,
+    .pay-details:before,
+    .category-price:after,
+    .category-price:before {
       display: none; } }
 
 .eventrah-body:after,
@@ -341,10 +548,24 @@ a {
 .register-page:after,
 .management-links:after,
 .select-design:after,
-.format-page:after {
+.format-page:after,
+.event-details:after,
+.place-details:after,
+.login-cards:after,
+.choose-category:after,
+.price-details:after,
+.login-cards-links:after,
+.conferences:after,
+.events:after,
+.services-offering:after,
+.notes:after,
+.help:after,
+.pay-details:after,
+.category-price:after {
   bottom: 0;
   left: 20px;
-  width: 36%; }
+  width: 36%;
+  z-index: -1; }
 
 .eventrah-body:before,
 .services:before,
@@ -353,10 +574,24 @@ a {
 .register-page:before,
 .management-links:before,
 .select-design:before,
-.format-page:before {
+.format-page:before,
+.event-details:before,
+.place-details:before,
+.login-cards:before,
+.choose-category:before,
+.price-details:before,
+.login-cards-links:before,
+.conferences:before,
+.events:before,
+.services-offering:before,
+.notes:before,
+.help:before,
+.pay-details:before,
+.category-price:before {
   top: 40px;
   right: 20px;
-  width: 33%; }
+  width: 33%;
+  z-index: -1; }
 
 @media (max-width: 991px) {
   .eventrah-body,
@@ -369,7 +604,20 @@ a {
 .register-page,
 .login-page,
 .select-design,
-.format-page {
+.format-page,
+.event-details,
+.place-details,
+.login-cards,
+.choose-category,
+.price-details,
+.login-cards-links,
+.conferences,
+.events,
+.services-offering,
+.notes,
+.help,
+.pay-details,
+.category-price {
   position: relative;
   display: -webkit-box;
   display: flex;
@@ -378,5 +626,50 @@ a {
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center; }
+
+label.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 15px;
+  padding-right: 35px; }
+  label.container:hover input ~ .checkmark {
+    background-color: #ccc; }
+  label.container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  label.container input:checked ~ .checkmark {
+    background-color: #2196f3; }
+  label.container input:checked ~ .checkmark:after {
+    display: block; }
+  label.container .checkmark {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #2196f3; }
+    label.container .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
 
 /* =====[End: Global rules]===== */

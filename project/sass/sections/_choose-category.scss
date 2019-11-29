@@ -1,0 +1,17 @@
+.choose-category {
+    padding: 70px 0;
+    .categories {
+        border: 1px solid #ced4da;
+        padding: 25px;
+        text-align: right;
+        label {
+            font-size: 18px;
+            line-height: 35px;
+        }
+        .category {
+            @media #{$maxSmall} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
