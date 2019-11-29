@@ -1,0 +1,28 @@
+.select-design {
+    padding: 70px 0;
+    ul.select-design-links {
+        @media #{$maxSmall} {
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            @media #{$maxSmall} {
+                display: block;
+                margin-bottom: 30px;
+            }
+            &:last-child {
+                margin-right: 70px;
+                @media #{$maxSmall} {
+                    margin-right: 0
+                }
+            }
+            img {
+                width: 164px;
+                margin-bottom: 20px;
+            }
+            a {
+                color: #676868;
+            }
+        }
+    }
+}

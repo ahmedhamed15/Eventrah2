@@ -10,6 +10,8 @@
 @import "sections/services";
 @import "sections/register";
 @import "sections/management-links";
+@import "sections/select-design";
+@import "sections/format-page";
 @import "layouts/footer";
 
 
@@ -35,7 +37,9 @@ a {
 .registeration-links,
 .login-page,
 .register-page,
-.management-links {
+.management-links,
+.select-design,
+.format-page {
     &:after,
     &:before {
         content: '';
@@ -68,7 +72,9 @@ a {
 .management-links,
 .registeration-links,
 .register-page,
-.login-page {
+.login-page,
+.select-design,
+.format-page {
     position: relative;
     display: flex;
     flex-direction: column;

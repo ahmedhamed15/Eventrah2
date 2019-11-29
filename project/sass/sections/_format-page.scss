@@ -1,0 +1,128 @@
+.plus-icon {
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    font: {
+        weight: bold;
+        size: 30px;
+    }
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    line-height: 22px;
+    text-align: center;
+}
+.format-page {
+    .row {
+        padding: 0 12.5%;
+        @media #{$maxSmall} {
+            padding: 0;
+        }
+    }
+    form {
+        padding: 40px 0;
+        .font-type {
+            position: relative;
+            &:after {
+                content: "T";
+                text-decoration: underline;
+                font: {
+                    weight: bold;
+                    size: 25px;
+                }
+                position: absolute;
+                top: 7px;
+                left: 28px;
+            }
+        }
+        .form-group {
+            a {
+                &.more {
+                    height: 52px;
+                    border: 1px solid #ced4da;
+                    display: block;
+                    text-align: right;
+                    padding: 12px 18px;
+                    color: #000;
+                    position: relative;
+                    &:after {
+                        @extend .plus-icon;
+                    }
+                }   
+            }
+        }
+        .form-control {
+            height: 52px;
+            border-radius: 0;
+            &.font-color {
+                position: relative;
+                &:after {
+                    content: "لون الخط";
+                    position: absolute;
+                    top: 11px;
+                    right: 23px;
+                    color: $lightColor;
+                    font-size: 18px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: 19px;
+                    background: url(../images/font-color.png) no-repeat;
+                    height: 27px;
+                    width: 50px;
+                    background-size: contain;
+                }
+            }
+            &.background-color {
+                position: relative;
+                &:after {
+                    content: "لون الخلفية";
+                    position: absolute;
+                    top: 11px;
+                    right: 23px;
+                    color: $lightColor;
+                    font-size: 18px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: 19px;
+                    background: url(../images/background-color.png) no-repeat;
+                    height: 27px;
+                    width: 50px;
+                    background-size: contain;
+                }
+            }
+            &.string-box-color {
+                &:after {
+                    content: "لون مربع النص"
+                }
+            }
+            &#insert-img {
+                display: none;
+            }
+        }
+        .insert-img-label {
+            height: 52px;
+            width: 100%;
+            text-align: right;
+            padding: 12px 15px;
+            border: 1px solid #ced4da;
+            position: relative;
+            &:after {
+                @extend .plus-icon;
+            }
+        }
+        select.form-control {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 52px;
+        }
+    }
+}

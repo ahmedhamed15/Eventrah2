@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-button {
   font-size: 18px;
   font-weight: bold;
@@ -73,18 +74,9 @@
   padding: 10px 40px;
   border-radius: 30px; }
 
-.login-page {
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center; }
-  .login-page form .form-control {
-    padding: 25px 20px;
-    border-radius: 0; }
+.login-page form .form-control {
+  padding: 25px 20px;
+  border-radius: 0; }
 
 .services {
   position: relative; }
@@ -147,6 +139,124 @@
     .management-links .user-managment-link {
       text-align: center !important; } }
 
+.select-design {
+  padding: 70px 0; }
+  @media (max-width: 991px) {
+    .select-design ul.select-design-links {
+      padding: 0; } }
+  .select-design ul.select-design-links li {
+    display: inline-block; }
+    @media (max-width: 991px) {
+      .select-design ul.select-design-links li {
+        display: block;
+        margin-bottom: 30px; } }
+    .select-design ul.select-design-links li:last-child {
+      margin-right: 70px; }
+      @media (max-width: 991px) {
+        .select-design ul.select-design-links li:last-child {
+          margin-right: 0; } }
+    .select-design ul.select-design-links li img {
+      width: 164px;
+      margin-bottom: 20px; }
+    .select-design ul.select-design-links li a {
+      color: #676868; }
+
+.plus-icon, .format-page form .form-group a.more:after, .format-page form .insert-img-label:after {
+  content: "+";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  font-weight: bold;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  line-height: 22px;
+  text-align: center; }
+
+.format-page .row {
+  padding: 0 12.5%; }
+  @media (max-width: 991px) {
+    .format-page .row {
+      padding: 0; } }
+
+.format-page form {
+  padding: 40px 0; }
+  .format-page form .font-type {
+    position: relative; }
+    .format-page form .font-type:after {
+      content: "T";
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 25px;
+      position: absolute;
+      top: 7px;
+      left: 28px; }
+  .format-page form .form-group a.more {
+    height: 52px;
+    border: 1px solid #ced4da;
+    display: block;
+    text-align: right;
+    padding: 12px 18px;
+    color: #000;
+    position: relative; }
+  .format-page form .form-control {
+    height: 52px;
+    border-radius: 0; }
+    .format-page form .form-control.font-color {
+      position: relative; }
+      .format-page form .form-control.font-color:after {
+        content: "لون الخط";
+        position: absolute;
+        top: 11px;
+        right: 23px;
+        color: #FFF;
+        font-size: 18px; }
+      .format-page form .form-control.font-color:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 19px;
+        background: url(../images/font-color.png) no-repeat;
+        height: 27px;
+        width: 50px;
+        background-size: contain; }
+    .format-page form .form-control.background-color {
+      position: relative; }
+      .format-page form .form-control.background-color:after {
+        content: "لون الخلفية";
+        position: absolute;
+        top: 11px;
+        right: 23px;
+        color: #FFF;
+        font-size: 18px; }
+      .format-page form .form-control.background-color:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 19px;
+        background: url(../images/background-color.png) no-repeat;
+        height: 27px;
+        width: 50px;
+        background-size: contain; }
+    .format-page form .form-control.string-box-color:after {
+      content: "لون مربع النص"; }
+    .format-page form .form-control#insert-img {
+      display: none; }
+  .format-page form .insert-img-label {
+    height: 52px;
+    width: 100%;
+    text-align: right;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    position: relative; }
+  .format-page form select.form-control {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 52px; }
+
 footer {
   background-color: #e8c31c;
   padding: 15px 0; }
@@ -196,7 +306,11 @@ a {
 .register-page:after,
 .register-page:before,
 .management-links:after,
-.management-links:before {
+.management-links:before,
+.select-design:after,
+.select-design:before,
+.format-page:after,
+.format-page:before {
   content: '';
   background: url(../images/shape.png);
   background-repeat: no-repeat;
@@ -213,7 +327,11 @@ a {
     .register-page:after,
     .register-page:before,
     .management-links:after,
-    .management-links:before {
+    .management-links:before,
+    .select-design:after,
+    .select-design:before,
+    .format-page:after,
+    .format-page:before {
       display: none; } }
 
 .eventrah-body:after,
@@ -221,7 +339,9 @@ a {
 .registeration-links:after,
 .login-page:after,
 .register-page:after,
-.management-links:after {
+.management-links:after,
+.select-design:after,
+.format-page:after {
   bottom: 0;
   left: 20px;
   width: 36%; }
@@ -231,7 +351,9 @@ a {
 .registeration-links:before,
 .login-page:before,
 .register-page:before,
-.management-links:before {
+.management-links:before,
+.select-design:before,
+.format-page:before {
   top: 40px;
   right: 20px;
   width: 33%; }
@@ -245,7 +367,9 @@ a {
 .management-links,
 .registeration-links,
 .register-page,
-.login-page {
+.login-page,
+.select-design,
+.format-page {
   position: relative;
   display: -webkit-box;
   display: flex;
