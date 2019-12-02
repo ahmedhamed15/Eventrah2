@@ -1,0 +1,82 @@
+.single-confirence {
+    padding: 70px 0;
+    h2 {
+        margin-bottom: 50px;
+        span {
+            color: #676868;
+            background-color: #EBEBEB;
+            padding: 0 40px;
+            border-radius: 30px;
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .deigns {
+        h4 {
+            span {
+                color: #676868;
+                background-color: $mainColor;
+                padding: 0 30px;
+                border-radius: 30px;
+                font-size: 18px;
+            }
+        }
+        img {
+            width: 150px;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: $mainColor;
+            border: none;
+            border-radius: 30px;
+            padding: 0 20px;
+            margin-bottom: 60px;
+        }
+    }
+    .fields {
+        @media (max-width: 991px) {
+            margin-bottom: 30px
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        input {
+            background-color: #F0F0F0;
+            border: none;
+            text-align: center;
+            border-radius: 20px;
+        }
+        label {
+            width: 50px;
+            &.to {
+                width: auto
+            }
+        }
+        button {
+            background: no-repeat;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    }
+    .delivery-certificate-method,
+    .delivery-invitation-method {
+        .custom-control {
+            padding-right: 1.5rem;
+            padding-left: 0;
+            label {
+                &:before {
+                    right: -1.5rem;
+                    left: auto;
+                }
+                &:after {
+                    right: -1.5rem;
+                    left: auto;
+                }
+            }
+        }
+    }
+}

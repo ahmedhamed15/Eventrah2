@@ -6,9 +6,9 @@
     padding: 5px 40px;
     border-radius: 20px;
     margin-top: 20px;
-    background-image: linear-gradient(to bottom right, $mainColor, #f7efcc);
+    background-image: linear-gradient(to bottom right, $mainColor, $mainColor);
     color: #3a3a3a;
     &:hover {
-        background-image: linear-gradient(to bottom right, #f7efcc, $mainColor);
+        background-image: linear-gradient(to bottom right, $mainColor, $mainColor);
     }
 }

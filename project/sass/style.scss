@@ -21,6 +21,10 @@
 @import "sections/pay-details";
 @import "sections/category-price";
 @import "sections/id-design";
+@import "sections/certificate-design";
+@import "sections/invitation-design";
+@import "sections/single-confirence";
+@import "sections/date";
 @import "layouts/footer";
 
 
@@ -61,7 +65,9 @@ a {
 .notes,
 .help,
 .pay-details,
-.category-price {
+.category-price,
+.single-confirence,
+.date {
     &:after,
     &:before {
         content: '';
@@ -111,7 +117,9 @@ a {
 .notes,
 .help,
 .pay-details,
-.category-price {
+.category-price,
+.single-confirence,
+.date {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -167,6 +175,11 @@ label.container {
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
         }
+    }
+}
+.events {
+    a.main-button {
+        min-width: 260px;
     }
 }
 /* =====[End: Global rules]===== */

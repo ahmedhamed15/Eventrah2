@@ -1,0 +1,14 @@
+.date {
+    h1 {
+        color: #988B4A;
+        margin-bottom: 30px;
+    }
+    .select-date {
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+        }
+    }
+}

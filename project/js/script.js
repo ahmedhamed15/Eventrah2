@@ -13,7 +13,7 @@ $(function() {
         }, 1000);
     });
     
-    $('.eventrah-body, .services, .registeration-links, .login-page, .register-page, .management-links, .select-design, .format-page, .event-details, .place-details, .login-cards, .choose-category, .price-details, .login-cards-links, .conferences, .events, .services-offering, .notes, .help, .pay-details, .category-price, .id-deign').css('minHeight', ($(window).height() - ($('.navbar').innerHeight() + $('footer').innerHeight() - 7)));
+    $('.eventrah-body, .services, .registeration-links, .login-page, .register-page, .management-links, .select-design, .format-page, .event-details, .place-details, .login-cards, .choose-category, .price-details, .login-cards-links, .conferences, .events, .services-offering, .notes, .help, .pay-details, .category-price, .id-deign, .single-confirence, .date').css('minHeight', ($(window).height() - ($('.navbar').innerHeight() + $('footer').innerHeight() - 7)));
     
     $('.services .service h3').on('click', function() {
         $(this).next('.service-menu').slideToggle();
